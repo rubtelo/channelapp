@@ -1,0 +1,33 @@
+{
+  "last_updated": "2026-04-08T02:18:09.721Z",
+  "data": [
+    {
+      "title": "DSPORTS",
+      "logo": "https://www.tvenvivo2.com/imge/directvsports.webp",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://aw1wcm92zq.fubohd.com/dsports/mono.m3u8?token=12fa1290d1c1cf21b95aca4f7c3ec9f25e1e2b06-9e-1775631744-1775613744"
+        },
+        {
+          "id": 2,
+          "link": "https://24a1.streameasthd.net/global/dsports/index.m3u8?token=1d13737e239eb632cb113be1c63028734ff82130-d2-1775659656-1775605656"
+        }
+      ]
+    },
+    {
+      "title": "DSPORTS-2",
+      "logo": "https://www.tvenvivo2.com/imge/directvsports.webp",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://cgxheq.fubohd.com/dsports2/mono.m3u8?token=9037e5b921408ecf5eed1dddc39ccd7fd7256883-c3-1775631767-1775613767"
+        },
+        {
+          "id": 2,
+          "link": "https://98ca2.streameasthd.net/global/dsports2/index.m3u8?token=cccb1ceddd20bedffcbe1ed15c7230a4557030e5-9e-1775659679-1775605679"
+        }
+      ]
+    }
+  ]
+}

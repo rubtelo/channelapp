@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "DSPORTS",
+    "logo": "https://www.tvenvivo2.com/imge/directvsports.webp",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=dsports",
+    "second_link": "https://streamtpnew.com/global1.php?stream=dsports",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 2,
+    "title": "DSPORTS-2",
+    "logo": "https://www.tvenvivo2.com/imge/directvsports.webp",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=dsports2",
+    "second_link": "https://streamtpnew.com/global1.php?stream=dsports2",
+    "third_link": "",
+    "active": true
+  }
+]
