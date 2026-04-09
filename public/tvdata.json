@@ -91,6 +91,24 @@
   },
   {
     "id": 11,
+    "title": "ESPNDEPORTES",
+    "logo": "espndeportes.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espndeportes",
+    "second_link": "",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 12,
+    "title": "ESPN-PREMIUM",
+    "logo": "espnpremium.png",
+    "base_link": "https://www.tvporinternet2.com/espn-premium-en-vivo-por-internet.html",
+    "second_link": "",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 12,
     "title": "TyC Sports",
     "logo": "tycsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=tycsports",
@@ -99,7 +117,7 @@
     "active": true
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "TyC Sports Internacional",
     "logo": "tycsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=tycinternacional",
@@ -108,7 +126,7 @@
     "active": true
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "WIN SPORTS",
     "logo": "winsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=winsports",
@@ -117,7 +135,7 @@
     "active": true
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "WIN SPORTS +",
     "logo": "winsportsplus.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=winsportsplus",
@@ -126,11 +144,47 @@
     "active": true
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "WIN PLUS+",
     "logo": "winsportsplus.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=winsports2",
     "second_link": "https://streamtpnew.com/global1.php?stream=winplus2",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 17,
+    "title": "BEIN SPORTS",
+    "logo": "beinsports.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=beinsportes",
+    "second_link": "",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 18,
+    "title": "BEIN EXTRA",
+    "logo": "beinxtra.png",
+    "base_link": "https://www.tvporinternet2.com/bein-sports-xtra-en-vivo-por-internet.html",
+    "second_link": "",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 18,
+    "title": "DAZN 1",
+    "logo": "dazn.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=dazn1",
+    "second_link": "",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 19,
+    "title": "SKY SPORTS",
+    "logo": "skysports.png",
+    "base_link": "https://www.tvplusgratis2.com/sky-sports-la-liga-en-vivo.html",
+    "second_link": "",
     "third_link": "",
     "active": true
   }
