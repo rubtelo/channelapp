@@ -139,6 +139,37 @@ app.post('/api/scrape', async (_req, res) => {
   }
 })
 
+/**
+ * POST /api/upload-results
+ * Recibe un JSON y lo guarda en public/tvresult.json
+ */
+app.post('/api/upload-results', async (req, res) => {
+  const clientToken = req.headers['x-api-key']
+
+  if (!clientToken || clientToken !== secretKey) {
+    return res.status(401).json({ 
+      success: false, 
+      message: 'No autorizado. Token inválido o ausente.' 
+    })
+  }
+
+  try {
+    const data = req.body
+    if (!data || !data.data) {
+      return res.status(400).json({ success: false, message: 'Formato de JSON inválido.' })
+    }
+
+    const outPath = path.join(__dirname, '../public/tvresult.json')
+    await writeFile(outPath, JSON.stringify(data, null, 2), 'utf-8')
+    console.log('\n💾 Resultados actualizados manualmente en public/tvresult.json')
+
+    res.json({ success: true, message: 'Archivo actualizado con éxito.' })
+  } catch (err) {
+    console.error('❌ Error al subir archivo:', err)
+    res.status(500).json({ success: false, message: String(err) })
+  }
+})
+
 // 2. IMPORTANTE: Cualquier otra ruta que no sea de la API debe devolver el index.html de React.
 // Usamos este middleware al final para capturar todo lo que no haya sido capturado antes.
 app.use((req, res) => {

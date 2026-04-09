@@ -37,13 +37,6 @@ export async function getStream(url) {
 
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
 
-    // Intentar hacer click en el body para iniciar reproducción
-    try {
-      await page.click('body')
-    } catch (_) {
-      // Ignorar si no hay elemento clickable
-    }
-
     // Esperar a que cargue el player y capture el stream
     await new Promise((resolve) => setTimeout(resolve, 8000))
 

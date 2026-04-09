@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "DSPORTS",
-    "logo": "https://www.tvenvivo2.com/imge/directvsports.webp",
+    "logo": "dsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=dsports",
     "second_link": "https://streamtpnew.com/global1.php?stream=dsports",
     "third_link": "",
@@ -10,10 +10,127 @@
   },
   {
     "id": 2,
-    "title": "DSPORTS-2",
-    "logo": "https://www.tvenvivo2.com/imge/directvsports.webp",
+    "title": "DSPORTS2",
+    "logo": "dsports2.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=dsports2",
     "second_link": "https://streamtpnew.com/global1.php?stream=dsports2",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 3,
+    "title": "DSPORTS+",
+    "logo": "dsportsplus.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=dsportsplus",
+    "second_link": "https://streamtpnew.com/global1.php?stream=dsportsplus",
+    "third_link": "",
+    "active": true
+  },
+   {
+    "id": 4,
+    "title": "ESPN",
+    "logo": "espn.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 5,
+    "title": "ESPN2",
+    "logo": "espn2.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn2",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn2",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 6,
+    "title": "ESPN3",
+    "logo": "espn3.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn3",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn3",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 7,
+    "title": "ESPN4",
+    "logo": "espn4.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn4",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn4",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 8,
+    "title": "ESPN5",
+    "logo": "espn5.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn5",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn5",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 9,
+    "title": "ESPN6",
+    "logo": "espn6.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn6",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn6",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 10,
+    "title": "ESPN7",
+    "logo": "espn7.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=espn7",
+    "second_link": "https://streamtpnew.com/global1.php?stream=espn7",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 11,
+    "title": "TyC Sports",
+    "logo": "tycsports.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=tycsports",
+    "second_link": "https://streamtpnew.com/global1.php?stream=tycsports",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 12,
+    "title": "TyC Sports Internacional",
+    "logo": "tycsports.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=tycinternacional",
+    "second_link": "https://streamtpnew.com/global1.php?stream=tycinternacional",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 13,
+    "title": "WIN SPORTS",
+    "logo": "winsports.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=winsports",
+    "second_link": "https://streamtpnew.com/global1.php?stream=winsports",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 14,
+    "title": "WIN SPORTS +",
+    "logo": "winsportsplus.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=winsportsplus",
+    "second_link": "https://streamtpnew.com/global1.php?stream=winplus",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 15,
+    "title": "WIN PLUS+",
+    "logo": "winsportsplus.png",
+    "base_link": "https://la14hd.com/vivo/canales.php?stream=winsports2",
+    "second_link": "https://streamtpnew.com/global1.php?stream=winplus2",
     "third_link": "",
     "active": true
   }

@@ -92,7 +92,6 @@ function TvData() {
             {activeShows.map((show) => (
               <div className="list-item" key={show.id}>
                 <div className="channel-header">
-                   <img src={show.logo} alt="logo" className="channel-logo-small" />
                    <span className="channel-name">{show.title}</span>
                 </div>
                 <div className="links-info-compact">

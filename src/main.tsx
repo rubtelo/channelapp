@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.tsx'
 import TvData from './tvdata/index.tsx'
 import TvLive from './tvlive/index.tsx'
+import TvUpload from './tvupload/index.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/tvdata" element={<TvData />} />
         <Route path="/tvlive" element={<TvLive />} />
+        <Route path="/tvupload" element={<TvUpload />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
