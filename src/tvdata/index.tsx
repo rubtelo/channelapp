@@ -59,7 +59,12 @@ function TvData() {
     setLastUpdated(null)
 
     try {
-      const res = await fetch('/api/scrape', { method: 'POST' })
+      const res = await fetch('/api/scrape', { 
+        method: 'POST',
+        headers: {
+          'x-api-key': 'Adm1n1str4'
+        }
+      })
       const json = await res.json()
 
       if (!json.success) throw new Error(json.message || 'Error desconocido')

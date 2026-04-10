@@ -1,55 +1,74 @@
 import puppeteer from 'puppeteer'
 
 /**
- * Abre la URL con Puppeteer y escucha solicitudes de red
- * para capturar el primer .m3u8 encontrado.
- * @param {string} url - URL de la página que embebe el player
- * @returns {{ success: boolean, stream?: string, message?: string }}
+ * Abre la URL y escucha solicitudes de red para capturar el primer .m3u8.
+ * @param {string} url - URL de la página
+ * @param {import('puppeteer').Browser} [existingBrowser] - Instancia de navegador opcional
  */
-export async function getStream(url) {
-  let browser
+export async function getStream(url, existingBrowser = null) {
+  let browser = existingBrowser
+  let page = null
 
   try {
-    browser = await puppeteer.launch({
-      headless: true,
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    })
+    if (!browser) {
+      browser = await puppeteer.launch({
+        headless: true,
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+      })
+    }
 
-    const page = await browser.newPage()
-
-    // User agent para evitar bloqueos básicos
+    page = await browser.newPage()
     await page.setUserAgent(
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
       '(KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     )
 
-    let streamUrl = null
+    return await new Promise(async (resolve) => {
+      let resolved = false
 
-    // Escuchar respuestas de red para detectar el .m3u8
-    page.on('response', async (response) => {
-      const responseUrl = response.url()
-      if (responseUrl.includes('.m3u8') && !streamUrl) {
-        console.log('   🎯 M3U8 detectado:', responseUrl)
-        streamUrl = responseUrl
+      // Timeout de seguridad por si no carga nada
+      const timeout = setTimeout(() => {
+        if (!resolved) {
+          resolved = true
+          resolve({ success: false, message: 'Timeout: No se detectó stream en 20s' })
+        }
+      }, 20000)
+
+      page.on('response', (response) => {
+        const responseUrl = response.url()
+        if (responseUrl.includes('.m3u8') && !resolved) {
+          resolved = true
+          clearTimeout(timeout)
+          resolve({ success: true, stream: responseUrl })
+        }
+      })
+
+      try {
+        await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
+        
+        // Espera corta adicional si goto termina pero no hay stream aún
+        await new Promise(r => setTimeout(r, 4000))
+        
+        if (!resolved) {
+          resolved = true
+          clearTimeout(timeout)
+          resolve({ success: false, message: 'No se encontró .m3u8 tras la carga' })
+        }
+      } catch (error) {
+        if (!resolved) {
+          resolved = true
+          clearTimeout(timeout)
+          resolve({ success: false, message: String(error) })
+        }
       }
     })
 
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
-
-    // Esperar a que cargue el player y capture el stream
-    await new Promise((resolve) => setTimeout(resolve, 8000))
-
-    await browser.close()
-
-    if (!streamUrl) {
-      return { success: false, message: 'No se encontró ningún .m3u8 en la página' }
-    }
-
-    return { success: true, stream: streamUrl }
-
   } catch (error) {
-    if (browser) await browser.close().catch(() => {})
     return { success: false, message: String(error) }
+  } finally {
+    if (page) await page.close().catch(() => {})
+    // Solo cerramos el browser si nosotros lo creamos
+    if (!existingBrowser && browser) await browser.close().catch(() => {})
   }
 }

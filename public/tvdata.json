@@ -108,7 +108,7 @@
     "active": true
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "TyC Sports",
     "logo": "tycsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=tycsports",
@@ -117,7 +117,7 @@
     "active": true
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "TyC Sports Internacional",
     "logo": "tycsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=tycinternacional",
@@ -126,7 +126,7 @@
     "active": true
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "WIN SPORTS",
     "logo": "winsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=winsports",
@@ -135,7 +135,7 @@
     "active": true
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "WIN SPORTS +",
     "logo": "winsportsplus.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=winsportsplus",
@@ -144,7 +144,7 @@
     "active": true
   },
   {
-    "id": 16,
+    "id": 17,
     "title": "WIN PLUS+",
     "logo": "winsportsplus.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=winsports2",
@@ -153,7 +153,7 @@
     "active": true
   },
   {
-    "id": 17,
+    "id": 18,
     "title": "BEIN SPORTS",
     "logo": "beinsports.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=beinsportes",
@@ -162,7 +162,7 @@
     "active": true
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "BEIN EXTRA",
     "logo": "beinxtra.png",
     "base_link": "https://www.tvporinternet2.com/bein-sports-xtra-en-vivo-por-internet.html",
@@ -171,7 +171,7 @@
     "active": true
   },
   {
-    "id": 18,
+    "id": 20,
     "title": "DAZN 1",
     "logo": "dazn.png",
     "base_link": "https://la14hd.com/vivo/canales.php?stream=dazn1",
@@ -180,10 +180,19 @@
     "active": true
   },
   {
-    "id": 19,
+    "id": 21,
     "title": "SKY SPORTS",
     "logo": "skysports.png",
     "base_link": "https://www.tvplusgratis2.com/sky-sports-la-liga-en-vivo.html",
+    "second_link": "",
+    "third_link": "",
+    "active": true
+  },
+  {
+    "id": 22,
+    "title": "M LIGA CHAMPIONS",
+    "logo": "mliga.png",
+    "base_link": "https://www.tvporinternet2.com/movistar-liga-de-campeones-en-vivo-por-internet.html",
     "second_link": "",
     "third_link": "",
     "active": true

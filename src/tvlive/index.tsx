@@ -26,7 +26,9 @@ function TvLive() {
   useEffect(() => {
     // Leemos directamente del endpoint que ya creamos en el servidor
     // Usamos el secret key para poder ver los canales
-    fetch('/api/channels', {
+    // Consumimos directamente la API externa de Coopava
+    fetch('https://coopava.com.co/api/', {
+      method: 'POST',
       headers: {
         'x-api-key': 'Adm1n1str4'
       }
@@ -73,7 +75,6 @@ function TvLive() {
           {result.data.map((channel, idx) => (
             <div className="live-item" key={idx}>
               <div className="live-main">
-                <img src={channel.logo} alt={channel.title} className="live-logo" />
                 <div className="live-info">
                   <span className="live-name">{channel.title}</span>
                   <div className="live-sources">
