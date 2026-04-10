@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-09T21:42:12",
+  "last_updated": "2026-04-09T22:37:45",
   "data": [
     {
       "title": "DSPORTS",
@@ -7,11 +7,11 @@
       "sources": [
         {
           "id": 1,
-          "link": "https://ym9yzq.fubohd.com/dsports/mono.m3u8?token=4cf12114dc0b2585dee9ebf2470e4a0668bfd83a-26-1775806018-1775788018"
+          "link": "https://x4bnd7lq.fubohd.com/dsports/mono.m3u8?token=58f7a02e5b6c6350af39069ddd61f43869771338-7a-1775809314-1775791314"
         },
         {
           "id": 2,
-          "link": "https://doc1.streameasthd.net/global/dsports/index.m3u8?token=f3d30961e14006553ada90ef40c950cc81279ac3-f7-1775833920-1775779920"
+          "link": "https://14c51.streameasthd.net/global/dsports/index.m3u8?token=fa93c606221a9f9513cf8e7be8faaac85743478a-b5-1775837216-1775783216"
         }
       ]
     },
@@ -21,11 +21,11 @@
       "sources": [
         {
           "id": 1,
-          "link": "https://x4bnd7lq.fubohd.com/dsports2/mono.m3u8?token=5364f12e589d76b91ca1c24c7d86a3b1d08ad6f0-99-1775806022-1775788022"
+          "link": "https://rm8zcvk3.fubohd.com/dsports2/mono.m3u8?token=fe9e70cd7a3ca3991c39144462c0b1b34f287da5-58-1775809318-1775791318"
         },
         {
           "id": 2,
-          "link": "https://doc1.streameasthd.net/global/dsports2/index.m3u8?token=86f69897465d97772cea713c9c509d6f2ebc05a1-44-1775833923-1775779923"
+          "link": "https://51a1.streameasthd.net/global/dsports2/index.m3u8?token=bf67e8f4786d5024b9fd480cad09689925a0d6ee-d9-1775837219-1775783219"
         }
       ]
     },
@@ -35,11 +35,11 @@
       "sources": [
         {
           "id": 1,
-          "link": "https://rm8zcvk3.fubohd.com/dsportsplus/mono.m3u8?token=088bb1a819271331607ba9ffe370c5b7ff386a14-94-1775806024-1775788024"
+          "link": "https://x4bnd7lq.fubohd.com/dsportsplus/mono.m3u8?token=f0e3ef230f93c6b3af3911ee9de6a89b1242858e-af-1775809320-1775791320"
         },
         {
           "id": 2,
-          "link": "https://51a1.streameasthd.net/global/dsportsplus/index.m3u8?token=86d1d9117ac0cb79754b55bfd8f0dff8b0ea5048-4a-1775833926-1775779926"
+          "link": "https://24a1.streameasthd.net/global/dsportsplus/index.m3u8?token=0b045c7842b13f7279ab180c0ed2128609e4f05f-8c-1775837221-1775783221"
         }
       ]
     },
@@ -49,11 +49,11 @@
       "sources": [
         {
           "id": 1,
-          "link": "https://wp9xqedt.fubohd.com/espn/mono.m3u8?token=457362e6ae5a0f8904360e7d559fb8e0a2c81bb5-6f-1775806027-1775788027"
+          "link": "https://agvyby.fubohd.com/espn/mono.m3u8?token=e540bc001810e883a91f13b1e6cfa2455ba72344-e9-1775809323-1775791323"
         },
         {
           "id": 2,
-          "link": "https://98ca2.streameasthd.net/global/espn/index.m3u8?token=de42cfc05c9ebaebdaaaaf837bc4dafa828c7499-53-1775833928-1775779928"
+          "link": "https://98ca2.streameasthd.net/global/espn/index.m3u8?token=269d148a5086a7b2544e4d01c69bcbd9bc15aaee-fe-1775837224-1775783224"
         }
       ]
     },
@@ -63,11 +63,221 @@
       "sources": [
         {
           "id": 1,
-          "link": "https://agvyby.fubohd.com/espn2/mono.m3u8?token=b2c621651b52fc167a63a135b1c37e95dfbe3594-4e-1775806030-1775788030"
+          "link": "https://bgfuzq.fubohd.com/espn2/mono.m3u8?token=9ed5f3339b62dc1f2a3ae9491d6f4ab240753138-45-1775809326-1775791326"
         },
         {
           "id": 2,
-          "link": "https://51a1.streameasthd.net/global/espn2/index.m3u8?token=a82450043a0c15164358c9f266d8a1687c1bfb43-3b-1775833931-1775779931"
+          "link": "https://pecdl1.streameasthd.net/global/espn2/index.m3u8?token=ca4b0de11f83ddb9e64c2e6b0a2452a705844c4e-21-1775837227-1775783227"
+        }
+      ]
+    },
+    {
+      "title": "ESPN3",
+      "logo": "espn3.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://agvyby.fubohd.com/espn3/mono.m3u8?token=4110099dab1240dd729a62e3f6cf0565c1001388-a5-1775809328-1775791328"
+        },
+        {
+          "id": 2,
+          "link": "https://8c51.streameasthd.net/global/espn3/index.m3u8?token=e500b7432a60bf25b0f5bbc175a22af131a52f76-64-1775837229-1775783229"
+        }
+      ]
+    },
+    {
+      "title": "ESPN4",
+      "logo": "espn4.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://bgfuzq.fubohd.com/espn4/mono.m3u8?token=6e3bf275c9507db1ac40aa03e12a6ffa5070b905-d9-1775809330-1775791330"
+        },
+        {
+          "id": 2,
+          "link": "https://98ca2.streameasthd.net/global/espn4/index.m3u8?token=570867699daa9b44de0504f06f7abeffabcb3595-e8-1775837231-1775783231"
+        }
+      ]
+    },
+    {
+      "title": "ESPN5",
+      "logo": "espn5.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://cgxheq.fubohd.com/espn5/mono.m3u8?token=f640dddc893cfd52ad9e224f522bf2a7db81ed3e-e0-1775809332-1775791332"
+        },
+        {
+          "id": 2,
+          "link": "https://pecdl1.streameasthd.net/global/espn5/index.m3u8?token=1db5d5a476859307cfc912e6d46ee21badcac89e-9d-1775837234-1775783234"
+        }
+      ]
+    },
+    {
+      "title": "ESPN6",
+      "logo": "espn6.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://rm8zcvk3.fubohd.com/espn6/mono.m3u8?token=8f97322c6a2c5e1f04e9f8aaa77357cbd49c5f3a-b8-1775809335-1775791335"
+        },
+        {
+          "id": 2,
+          "link": "https://pecdl1.streameasthd.net/global/espn6/index.m3u8?token=4a7c305c58ce4aee00127a18ce2a070a4a8adfad-26-1775837236-1775783236"
+        }
+      ]
+    },
+    {
+      "title": "ESPN7",
+      "logo": "espn7.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://aw1wcm92zq.fubohd.com/espn7/mono.m3u8?token=5a94f6d50e4059e9c58b1d6d86b892d8ab0d7661-d5-1775809337-1775791337"
+        },
+        {
+          "id": 2,
+          "link": "https://98ca2.streameasthd.net/global/espn7/index.m3u8?token=16115b743dc0f8454c0ee45da0abdb5bf0f7cb92-37-1775837238-1775783238"
+        }
+      ]
+    },
+    {
+      "title": "ESPNDEPORTES",
+      "logo": "espndeportes.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://anvtcax.fubohd.com/espndeportes/mono.m3u8?token=0daf0fd19e803d7e8457cb28e71af5238d287edc-5c-1775809339-1775791339"
+        }
+      ]
+    },
+    {
+      "title": "ESPN-PREMIUM",
+      "logo": "espnpremium.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://deportes.ksdjugfsddeports.com:9092/MjAwLjExOC44MC42/5_.m3u8?token=Tsi1H5A7uV1tGANN9VK4Ug&expires=1775824643"
+        }
+      ]
+    },
+    {
+      "title": "TyC Sports",
+      "logo": "tycsports.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://ym9yzq.fubohd.com/tycsports/mono.m3u8?token=c429718ba00e2774d6f1ea789458d85b792f7b6d-12-1775809344-1775791344"
+        },
+        {
+          "id": 2,
+          "link": "https://doc1.streameasthd.net/global/tycsports/index.m3u8?token=93daea54a0e1f1d47923c45f56aedcfb5f0ba40f-80-1775837245-1775783245"
+        }
+      ]
+    },
+    {
+      "title": "TyC Sports Internacional",
+      "logo": "tycsports.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://a2vlca.fubohd.com/tycinternacional/mono.m3u8?token=b032eae6fd26c92a3639ea8920868ff52bcca5dc-4e-1775809347-1775791347"
+        },
+        {
+          "id": 2,
+          "link": "https://51a1.streameasthd.net/global/tycinternacional/index.m3u8?token=d5b3db54124e146f3bc19f3269641a6b69683979-38-1775837248-1775783248"
+        }
+      ]
+    },
+    {
+      "title": "WIN SPORTS",
+      "logo": "winsports.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://x4bnd7lq.fubohd.com/winsports/mono.m3u8?token=d62a0c140a8e2db6efa6838f227d461ef1554214-83-1775809349-1775791349"
+        },
+        {
+          "id": 2,
+          "link": "https://24a1.streameasthd.net/global/winsports/index.m3u8?token=4a58eafb59427592f82c3ce2025bf2c037b7a0e0-cf-1775837250-1775783250"
+        }
+      ]
+    },
+    {
+      "title": "WIN SPORTS +",
+      "logo": "winsportsplus.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://wp9xqedt.fubohd.com/winsportsplus/mono.m3u8?token=f5f24e979b6ffe69122198038659f711faafb9f7-dc-1775809351-1775791351"
+        },
+        {
+          "id": 2,
+          "link": "https://doc1.streameasthd.net/global/winplus/index.m3u8?token=daa892a55a6919e6897a8b618690d29bc25b8463-81-1775837252-1775783252"
+        }
+      ]
+    },
+    {
+      "title": "WIN PLUS+",
+      "logo": "winsportsplus.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://rm8zcvk3.fubohd.com/winsports2/mono.m3u8?token=0e35254321dcebe2205e3d3345da71a80cea6482-a7-1775809353-1775791353"
+        },
+        {
+          "id": 2,
+          "link": "https://51a1.streameasthd.net/global/winplus2/index.m3u8?token=7b9d4f0f3300bc25d1e95c8fbdba7a787918eec8-e4-1775837254-1775783254"
+        }
+      ]
+    },
+    {
+      "title": "BEIN SPORTS",
+      "logo": "beinsports.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://ag9wzq.fubohd.com/beinsportes/mono.m3u8?token=ae274a65fb6accb3663092f68afe0ad188a81085-81-1775809355-1775791355"
+        }
+      ]
+    },
+    {
+      "title": "BEIN EXTRA",
+      "logo": "beinxtra.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://deportes.ksdjugfsddeports.com:9092/MjAwLjExOC44MC42/31_.m3u8?token=-ndp6r6A5lZ607ZQpFRuEQ&expires=1775824657"
+        }
+      ]
+    },
+    {
+      "title": "DAZN 1",
+      "logo": "dazn.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://anvtcax.fubohd.com/dazn1/mono.m3u8?token=09896d4967060bb91f516b0553bf54e491a079ae-6e-1775809358-1775791358"
+        }
+      ]
+    },
+    {
+      "title": "SKY SPORTS",
+      "logo": "skysports.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://deportes.ksdjugfsddeports.com:9092/MjAwLjExOC44MC42/37_.m3u8?token=WF1A1odmhytq6G_IiLDZRQ&expires=1775824662"
+        }
+      ]
+    },
+    {
+      "title": "M LIGA CHAMPIONS",
+      "logo": "mliga.png",
+      "sources": [
+        {
+          "id": 1,
+          "link": "https://deportes.ksdjugfsddeports.com:9092/MjAwLjExOC44MC42/29_.m3u8?token=cjgMcNVb441dUBS9LmYb5w&expires=1775824664"
         }
       ]
     }

@@ -24,11 +24,10 @@ function TvLive() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    // Leemos directamente del endpoint que ya creamos en el servidor
     // Usamos el secret key para poder ver los canales
-    // Consumimos directamente la API externa de Coopava
-    fetch('https://coopava.com.co/api/', {
-      method: 'POST',
+    // Consumimos directamente la API externa
+    fetch('https://coopava.com.co/api/getchannels.php', {
+      method: 'GET',
       headers: {
         'x-api-key': 'Adm1n1str4'
       }
@@ -45,7 +44,7 @@ function TvLive() {
         setError(err.message)
         setLoading(false)
       })
-  }, [])
+  }, []);
 
   return (
     <main className="container">
