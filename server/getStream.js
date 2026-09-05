@@ -21,10 +21,11 @@ export async function getStream(url, existingBrowser = null) {
     page = await browser.newPage()
     await page.setUserAgent(
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
-      '(KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+      '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
     )
 
-    return await new Promise(async (resolve) => {
+    // Escuchamos respuestas de red buscando el primer .m3u8
+    return await new Promise((resolve) => {
       let resolved = false
 
       // Timeout de seguridad por si no carga nada
@@ -44,24 +45,23 @@ export async function getStream(url, existingBrowser = null) {
         }
       })
 
-      try {
-        await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
-        
-        // Espera corta adicional si goto termina pero no hay stream aún
-        await new Promise(r => setTimeout(r, 4000))
-        
-        if (!resolved) {
-          resolved = true
-          clearTimeout(timeout)
-          resolve({ success: false, message: 'No se encontró .m3u8 tras la carga' })
-        }
-      } catch (error) {
-        if (!resolved) {
-          resolved = true
-          clearTimeout(timeout)
-          resolve({ success: false, message: String(error) })
-        }
-      }
+      page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
+        .then(async () => {
+          // Espera corta adicional si goto termina pero no hay stream aún
+          await new Promise(r => setTimeout(r, 4000))
+          if (!resolved) {
+            resolved = true
+            clearTimeout(timeout)
+            resolve({ success: false, message: 'No se encontró .m3u8 tras la carga' })
+          }
+        })
+        .catch((error) => {
+          if (!resolved) {
+            resolved = true
+            clearTimeout(timeout)
+            resolve({ success: false, message: String(error) })
+          }
+        })
     })
 
   } catch (error) {

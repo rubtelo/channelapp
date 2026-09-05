@@ -108,7 +108,7 @@ export default function TvUpload() {
           </p>
         )}
       </div>
-      
+
       <p className="hint">
         Nota: Esto sobrescribirá el archivo <code>public/tvresult.json</code> en el servidor.
       </p>

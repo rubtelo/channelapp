@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import puppeteer from 'puppeteer'
-import fetch from 'node-fetch'
+// fetch is now available natively in Node.js v18+
 import { getStream } from './getStream.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
