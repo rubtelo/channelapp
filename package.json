@@ -8,6 +8,7 @@
     "server": "node server/index.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
     "postinstall": "puppeteer browsers install chrome",
+    "scrape": "node server/run-scrape.js",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "start": "node server/index.js"

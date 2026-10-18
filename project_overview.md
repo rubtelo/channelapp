@@ -79,13 +79,26 @@ Generado automáticamente y sincronizado con el servidor remoto.
 Todos los endpoints requieren el header `x-api-key: Adm1n1str4`.
 
 - `GET /api/channels`: Retorna el contenido de `tvresult.json`.
-- `POST /api/scrape`: Inicia el proceso de Puppeteer (optimizado) y sincroniza con la API externa.
+- `POST /api/scrape`: Inicia el proceso de Puppeteer (optimizado) y sincroniza con la API externa delegando en `server/scraper.js`.
 - `POST /api/upload-results`: Permite subir un archivo JSON manualmente.
 
 ---
 
+## 💻 Modos de Ejecución
+1. **Modo Web Completo (Interfaz + API)**:
+   ```bash
+   npm run dev:all
+   ```
+2. **Modo Scraper Consola / Headless (Ideal para Google Colab o ejecución por terminal sin interfaz)**:
+   ```bash
+   npm run scrape
+   ```
+
+---
+
 ## 💡 Notas de Implementación (Skills)
-1. **Scraping**: El archivo `server/getStream.js` utiliza promesas que resuelven por evento de red. Esto elimina tiempos muertos (no hay esperas fijas de 8s). Tiene un timeout de seguridad de 20s.
-2. **Manejo de Navegador**: Se implementó una estructura de `try/finally` para asegurar que el navegador se cierre siempre, evitando fugas de memoria en ambientes de producción limitados.
-3. **Seguridad**: Se centralizó la validación de tokens en un middleware `validateApiKey` en `server/index.js`.
-4. **Optimización Front**: Las vistas de canales y resultados están diseñadas para mostrar links directos y estados de carga claros durante el proceso de scraping.
+1. **Scraping Modular**: La lógica central de extracción reside en `server/scraper.js`, siendo compartida tanto por el endpoint HTTP `/api/scrape` como por el ejecutor CLI `server/run-scrape.js`.
+2. **Detección Rápida de Stream**: El archivo `server/getStream.js` utiliza promesas que resuelven por evento de red. Esto elimina tiempos muertos. Tiene un timeout de seguridad de 20s.
+3. **Manejo de Navegador**: Se implementó una estructura de `try/finally` para asegurar que el navegador se cierre siempre, evitando fugas de memoria en ambientes de producción limitados.
+4. **Seguridad**: Se centralizó la validación de tokens en un middleware `validateApiKey` en `server/index.js`.
+5. **Optimización Front**: Las vistas de canales y resultados están diseñadas para mostrar links directos y estados de carga claros durante el proceso de scraping.
