@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'fs/promises'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import puppeteer from 'puppeteer'
-import { getStream, isStreamOnline } from './getStream.js'
+import { getStream, isStreamOnline, resolveChromeExecutable } from './getStream.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const SECRET_KEY = process.env.API_SECRET_KEY || 'Adm1n1str4'
@@ -62,9 +62,13 @@ export async function runScraper() {
 
         if (activeLinks.length > 0) {
           if (!browser) {
+            const execPath = resolveChromeExecutable()
+            if (execPath) {
+              console.log(`🌐 Usando navegador del sistema: ${execPath}`)
+            }
             browser = await puppeteer.launch({
               headless: true,
-              executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+              executablePath: execPath,
               args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',

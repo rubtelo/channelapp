@@ -1,8 +1,31 @@
 import puppeteer from 'puppeteer'
+import { existsSync } from 'fs'
 
 const DEFAULT_USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' +
   '(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+
+/**
+ * Resuelve la ruta del ejecutable de Chrome/Chromium.
+ * Si existe una variable de entorno o Chromium del sistema (ej. Ubuntu/Colab en /usr/bin/chromium-browser),
+ * la utiliza automáticamente; de lo contrario usa el Chrome descargado por Puppeteer.
+ */
+export function resolveChromeExecutable() {
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+    return process.env.PUPPETEER_EXECUTABLE_PATH
+  }
+  const possiblePaths = [
+    '/usr/bin/chromium-browser',
+    '/usr/bin/chromium',
+    '/usr/bin/google-chrome-stable'
+  ]
+  for (const p of possiblePaths) {
+    if (existsSync(p)) {
+      return p
+    }
+  }
+  return undefined
+}
 
 /**
  * Valida rápidamente si una URL m3u8 directa está online y responde con un manifiesto HLS válido (#EXTM3U).
@@ -42,7 +65,7 @@ export async function getStream(url, existingBrowser = null) {
     if (!browser) {
       browser = await puppeteer.launch({
         headless: true,
-        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+        executablePath: resolveChromeExecutable(),
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
