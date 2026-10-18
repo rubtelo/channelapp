@@ -4,7 +4,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import puppeteer from 'puppeteer'
 // fetch is now available natively in Node.js v18+
-import { getStream } from './getStream.js'
+import { getStream, isStreamOnline } from './getStream.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = express()
@@ -72,70 +72,120 @@ app.post('/api/scrape', validateApiKey, async (_req, res) => {
     const raw = await readFile(dataPath, 'utf-8')
     const channels = JSON.parse(raw)
 
-    const activeChannels = channels.filter((c) => c.active === true)
-    console.log(`\n🚀 Iniciando scraping profundo para ${activeChannels.length} canal(es)...\n`)
+    console.log(`\n🚀 Iniciando procesamiento para ${channels.length} canal(es)...\n`)
 
     const finalResults = []
 
-    browser = await puppeteer.launch({
-      headless: true,
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    })
+    for (const channel of channels) {
+      // 1. Por cada elemento del array valida si el key "active": true y continuas, si es false pasas al siguiente
+      if (channel.active !== true) {
+        console.log(`⏭️ Saltando ${channel.title || 'Canal'} (active: false)`)
+        continue
+      }
 
-    for (const channel of activeChannels) {
-      console.log(`📺 Procesando: ${channel.title}`)
-      
-      const linksToProcess = [
-        { id: 1, type: 'base', url: channel.base_link },
-        { id: 2, type: 'second', url: channel.second_link },
-      ]
-
+      console.log(`📺 Procesando canal: ${channel.title} (ID: ${channel.id})`)
       const sources = []
 
-      for (const item of linksToProcess) {
-        if (item.url && item.url.trim() !== "") {
-          console.log(`   🔗 [${item.type}] Scraping: ${item.url}`)
-          const result = await getStream(item.url, browser)
-          
-          if (result.success) {
-            let finalStream = result.stream
-
-            if (item.type === 'second') {
-              try {
-                const urlObj = new URL(finalStream)
-                urlObj.searchParams.delete('ip')
-                finalStream = urlObj.toString()
-                console.log(`      🧹 URL Limpiada (sin ip): ${finalStream.substring(0, 50)}...`)
-              } catch (e) {
-                console.error("Error limpiando URL:", e)
-              }
+      // 2. Si el key "direct" tiene elementos y los elementos internos tienen "active": true, validar si está online
+      if (Array.isArray(channel.direct) && channel.direct.length > 0) {
+        for (const directItem of channel.direct) {
+          if (directItem.active === true && directItem.base && directItem.base.trim() !== '') {
+            const streamUrl = directItem.base.trim()
+            console.log(`   ⚡ [direct] Validando: ${streamUrl}`)
+            const isOnline = await isStreamOnline(streamUrl)
+            if (isOnline) {
+              console.log(`      ✅ Direct Online!`)
+              sources.push({
+                link: streamUrl
+              })
+            } else {
+              console.log(`      ❌ Direct Offline / No responde`)
             }
-
-            sources.push({
-              id: item.id,
-              link: finalStream
-            })
-            console.log(`      ✅ M3U8: ${finalStream.substring(0, 60)}...`)
-          } else {
-            console.log(`      ❌ Falló: ${result.message}`)
           }
         }
       }
 
-      finalResults.push({
-        title: channel.title,
-        logo: channel.logo,
-        sources: sources
-      })
+      // 3. Revisar los elementos en el array "link" con "active": true usando Puppeteer
+      if (Array.isArray(channel.link) && channel.link.length > 0) {
+        const activeLinks = channel.link.filter(
+          (l) => l.active === true && l.base && l.base.trim() !== ''
+        )
+
+        if (activeLinks.length > 0) {
+          if (!browser) {
+            browser = await puppeteer.launch({
+              headless: true,
+              executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+              args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-accelerated-2d-canvas',
+                '--disable-gpu'
+              ]
+            })
+          }
+
+          for (const linkItem of activeLinks) {
+            const pageUrl = linkItem.base.trim()
+            console.log(`   🔗 [link] Scraping con Puppeteer: ${pageUrl}`)
+            const result = await getStream(pageUrl, browser)
+
+            if (result.success && result.stream) {
+              let finalStream = result.stream
+
+              // Limpiar parámetro ip si viniera presente en la url obtenida
+              try {
+                const urlObj = new URL(finalStream)
+                if (urlObj.searchParams.has('ip')) {
+                  urlObj.searchParams.delete('ip')
+                  finalStream = urlObj.toString()
+                }
+              } catch (_) {}
+
+              console.log(`      ✅ M3U8 encontrado: ${finalStream.substring(0, 65)}...`)
+              sources.push({
+                link: finalStream
+              })
+            } else {
+              console.log(`      ❌ Falló: ${result.message}`)
+            }
+          }
+        }
+      }
+
+      // 4. Si las URLs que van a pasar a result son de resultado positivo
+      if (sources.length > 0) {
+        // Logo: valida el key logo_url, si no es vacío se coloca esa url, si es vacío el valor de logo
+        let finalLogo = channel.logo
+        if (
+          channel.logo_url &&
+          typeof channel.logo_url === 'string' &&
+          channel.logo_url.trim() !== ''
+        ) {
+          finalLogo = channel.logo_url.trim()
+        }
+
+        finalResults.push({
+          title: channel.title,
+          logo: finalLogo,
+          sources: sources
+        })
+      } else {
+        console.log(`   ⚠️ Sin fuentes válidas para ${channel.title}`)
+      }
     }
 
-    // Cerramos el browser lo antes posible tras el loop
-    await browser.close()
-    browser = null
+    // Cerramos el browser lo antes posible si se abrió
+    if (browser) {
+      await browser.close()
+      browser = null
+    }
 
     // Generar fecha en formato local de Bogotá (YYYY-MM-DDTHH:mm:ss)
-    const bogotaDate = new Date().toLocaleString("sv-SE", { timeZone: "America/Bogota" }).replace(" ", "T")
+    const bogotaDate = new Date()
+      .toLocaleString('sv-SE', { timeZone: 'America/Bogota' })
+      .replace(' ', 'T')
 
     const output = {
       last_updated: bogotaDate,

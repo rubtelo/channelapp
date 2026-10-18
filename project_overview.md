@@ -31,15 +31,26 @@ El proyecto se divide en dos grandes componentes:
 ## 📁 Estructura de Datos (JSON)
 
 ### `tvdata.json` (Configuración Fuente)
-Contiene la lista de canales a procesar junto con sus links de origen.
+Contiene la lista de canales a procesar junto con sus links directos y de scraping.
 ```json
 {
   "id": number,
   "title": "Nombre del canal",
   "logo": "nombre_archivo.png",
-  "base_link": "URL_scraping_1",
-  "second_link": "URL_scraping_2",
-  "active": boolean
+  "logo_url": "https://url_remota_logo.png",
+  "active": boolean,
+  "direct": [
+    {
+      "base": "URL_M3U8_Directa",
+      "active": boolean
+    }
+  ],
+  "link": [
+    {
+      "base": "URL_Web_Scraping",
+      "active": boolean
+    }
+  ]
 }
 ```
 
@@ -50,10 +61,12 @@ Generado automáticamente y sincronizado con el servidor remoto.
   "last_updated": "YYYY-MM-DDTHH:mm:ss (Local Bogota)",
   "data": [
     {
-      "title": "Nombre",
-      "logo": "nombre_logo.png",
+      "title": "Nombre del canal",
+      "logo": "URL_remota_o_nombre_archivo",
       "sources": [
-        { "id": 1, "link": "URL_M3U8_Directa" }
+        {
+          "link": "URL_M3U8_Valida"
+        }
       ]
     }
   ]

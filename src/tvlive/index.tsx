@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 interface StreamSource {
-  id: number
+  id?: number
   link: string
 }
 
@@ -77,16 +77,16 @@ function TvLive() {
                 <div className="live-info">
                   <span className="live-name">{channel.title}</span>
                   <div className="live-sources">
-                    {channel.sources.map((s) => (
+                    {channel.sources.map((s, sIdx) => (
                       <a 
-                        key={s.id}
+                        key={sIdx}
                         href={s.link} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="live-badge"
                         title={s.link}
                       >
-                        OPCIÓN {s.id}
+                        OPCIÓN {s.id ?? sIdx + 1}
                       </a>
                     ))}
                   </div>

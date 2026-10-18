@@ -1,18 +1,26 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+interface LinkItem {
+  base: string
+  active: boolean
+}
+
 interface TvSource {
   id: number
   title: string
   logo: string
-  base_link: string
-  second_link: string
-  third_link: string
+  logo_url?: string
+  base_link?: string
+  second_link?: string
+  third_link?: string
+  direct?: LinkItem[]
+  link?: LinkItem[]
   active: boolean
 }
 
 interface StreamSource {
-  id: number
+  id?: number
   link: string
 }
 
@@ -100,8 +108,14 @@ function TvData() {
                    <span className="channel-name">{show.title}</span>
                 </div>
                 <div className="links-info-compact">
-                  <p><span>🔗 Base:</span> {show.base_link}</p>
-                  <p><span>🔗 Second:</span> {show.second_link}</p>
+                  {show.direct && show.direct.length > 0 && (
+                    <p><span>⚡ Directos ({show.direct.filter(d => d.active).length} activos):</span> {show.direct.filter(d => d.active).map(d => d.base).join(', ')}</p>
+                  )}
+                  {show.link && show.link.length > 0 && (
+                    <p><span>🔗 Puppeteer ({show.link.filter(l => l.active).length} activos):</span> {show.link.filter(l => l.active).map(l => l.base).join(', ')}</p>
+                  )}
+                  {show.base_link && <p><span>🔗 Base:</span> {show.base_link}</p>}
+                  {show.second_link && <p><span>🔗 Second:</span> {show.second_link}</p>}
                   {show.third_link && <p><span>🔗 Third:</span> {show.third_link}</p>}
                 </div>
               </div>
@@ -143,9 +157,9 @@ function TvData() {
                 </div>
                 <div className="sources-container">
                   {r.sources.length > 0 ? (
-                    r.sources.map((s) => (
-                      <div className="source-row" key={s.id}>
-                        <span className="source-badge">F{s.id}</span>
+                    r.sources.map((s, sIdx) => (
+                      <div className="source-row" key={sIdx}>
+                        <span className="source-badge">F{s.id ?? sIdx + 1}</span>
                         <a
                           className="stream-link"
                           href={s.link}

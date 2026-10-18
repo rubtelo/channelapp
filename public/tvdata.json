@@ -3,192 +3,445 @@
     "id": 1,
     "title": "DSPORTS",
     "logo": "dsports.png",
-    "base_link": "https://noveopartidos.xyz/ver/1",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/directvsports.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=dsports",
+        "active": true
+      },
+      {
+        "base": "https://www.tvporinternet.org/directv-sports-en-vivo-online.php",
+        "active": false
+      }
+    ]
   },
   {
     "id": 2,
     "title": "DSPORTS2",
     "logo": "dsports2.png",
-    "base_link": "https://noveopartidos.xyz/ver/11",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/directvsports2.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=dsports2",
+        "active": true
+      }
+    ]
   },
   {
     "id": 3,
     "title": "DSPORTS+",
     "logo": "dsportsplus.png",
-    "base_link": "https://noveopartidos.xyz/ver/14",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/directvsportsplus.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=dsportsplus",
+        "active": true
+      }
+    ]
   },
   {
     "id": 4,
     "title": "ESPN",
     "logo": "espn.png",
-    "base_link": "https://noveopartidos.xyz/ver/36",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn",
+        "active": true
+      }
+    ]
   },
   {
     "id": 5,
     "title": "ESPN2",
     "logo": "espn2.png",
-    "base_link": "https://noveopartidos.xyz/ver/21",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn2.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn2",
+        "active": true
+      }
+    ]
   },
   {
     "id": 6,
     "title": "ESPN3",
     "logo": "espn3.png",
-    "base_link": "https://noveopartidos.xyz/ver/25",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn3.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn3",
+        "active": true
+      }
+    ]
   },
   {
     "id": 7,
     "title": "ESPN4",
     "logo": "espn4.png",
-    "base_link": "https://noveopartidos.xyz/ver/27",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN_4/ESPN_4.isml/ESPN_4.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn4.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn4",
+        "active": true
+      }
+    ]
   },
   {
     "id": 8,
     "title": "ESPN5",
     "logo": "espn5.png",
-    "base_link": "https://noveopartidos.xyz/ver/30",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN_5/ESPN_5.isml/ESPN_5.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn5.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn5",
+        "active": true
+      }
+    ]
   },
   {
     "id": 9,
     "title": "ESPN6",
     "logo": "espn6.png",
-    "base_link": "https://noveopartidos.xyz/ver/31",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN_6/ESPN_6.isml/ESPN_6.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn6.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn6",
+        "active": true
+      }
+    ]
   },
   {
     "id": 10,
     "title": "ESPN7",
     "logo": "espn7.png",
-    "base_link": "https://noveopartidos.xyz/ver/32",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://barinaslive1.boldmss.com/ESPN_7/ESPN_7.isml/ESPN_7.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espn7.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espn7",
+        "active": true
+      }
+    ]
   },
   {
     "id": 11,
-    "title": "ESPNDEPORTES",
-    "logo": "espndeportes.png",
-    "base_link": "https://noveopartidos.xyz/ver/35",
-    "second_link": "",
-    "active": true
+    "title": "ESPN-PREMIUM",
+    "logo": "espnpremium.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/espn_premium.stream/playlist.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/espnpremiumlat.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=espnpremium",
+        "active": true
+      }
+    ]
   },
   {
     "id": 12,
-    "title": "ESPN-PREMIUM",
-    "logo": "espnpremium.png",
-    "base_link": "https://noveopartidos.xyz/ver/39",
-    "second_link": "",
-    "active": true
+    "title": "TyC Sports",
+    "logo": "tycsports.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/tycsports.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=tycsports",
+        "active": true
+      },
+      {
+        "base": "https://noveopartidos.xyz/ver/26",
+        "active": true
+      }
+    ]
   },
   {
     "id": 13,
-    "title": "TyC Sports",
-    "logo": "tycsports.png",
-    "base_link": "https://noveopartidos.xyz/ver/85",
-    "second_link": "",
-    "active": true
+    "title": "WIN SPORTS",
+    "logo": "winsports.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=winsports",
+        "active": true
+      }
+    ]
   },
   {
     "id": 14,
-    "title": "TyC Sports Internacional",
-    "logo": "tycsports.png",
-    "base_link": "",
-    "second_link": "",
-    "active": false
+    "title": "WIN SPORTS +",
+    "logo": "winsportsplus.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=winsports2",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=winsportsplus",
+        "active": true
+      }
+    ]
   },
   {
     "id": 15,
-    "title": "WIN SPORTS",
-    "logo": "winsports.png",
-    "base_link": "https://noveopartidos.xyz/ver/91",
-    "second_link": "",
-    "active": true
+    "title": "BEIN SPORTS",
+    "logo": "beinsports.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=beinsportes",
+        "active": true
+      }
+    ]
   },
   {
     "id": 16,
-    "title": "WIN SPORTS +",
-    "logo": "winsportsplus.png",
-    "base_link": "https://noveopartidos.xyz/ver/90",
-    "second_link": "",
-    "active": true
+    "title": "BEIN EXTRA",
+    "logo": "beinxtra.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "https://aegis-cloudfront-1.tubi.video/01f6c149-449b-4248-8bda-2278799205ec/playlist.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/beinsportsxtra.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=beinsport_xtra_espanol",
+        "active": true
+      }
+    ]
   },
   {
     "id": 17,
-    "title": "WIN PLUS+",
-    "logo": "winsportsplus.png",
-    "base_link": "https://la18hd.su/vivo/canales.php?stream=winsports2",
-    "second_link": "",
-    "active": true
+    "title": "EUROSPORT1",
+    "logo": "",
+    "logo_url": "https://i.imgur.com/olQJgm7.png",
+    "active": true,
+    "direct": [
+      {
+        "base": "http://88.212.15.17/live/esp1_hun/index.m3u8",
+        "active": true
+      }
+    ],
+    "link": []
   },
   {
     "id": 18,
-    "title": "BEIN SPORTS",
-    "logo": "beinsports.png",
-    "base_link": "https://noveopartidos.xyz/ver/4",
-    "second_link": "",
-    "active": true
+    "title": "EUROSPORT2",
+    "logo": "",
+    "logo_url": "https://i.imgur.com/f56dHgR.png",
+    "active": true,
+    "direct": [
+      {
+        "base": "http://88.212.15.17/live/esp2_hun/index.m3u8",
+        "active": true
+      }
+    ],
+    "link": []
   },
   {
     "id": 19,
-    "title": "BEIN EXTRA",
-    "logo": "beinxtra.png",
-    "base_link": "https://www.tvporinternet2.com/bein-sports-xtra-en-vivo-por-internet.php",
-    "second_link": "",
-    "active": true
+    "title": "TUDN",
+    "logo": "tudn.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/tudn.php",
+        "active": true
+      },
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=tudn",
+        "active": true
+      }
+    ]
   },
   {
     "id": 20,
-    "title": "DAZN 1",
-    "logo": "dazn.png",
-    "base_link": "https://la14hd.com/vivo/canales.php?stream=dazn1",
-    "second_link": "",
-    "active": true
+    "title": "MOVISTAR LaLiga",
+    "logo": "mliga.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/movistarlaliga.php",
+        "active": true
+      }
+    ]
   },
   {
     "id": 21,
-    "title": "SKY SPORTS",
-    "logo": "skysports.png",
-    "base_link": "https://noveopartidos.xyz/ver/72",
-    "second_link": "",
-    "active": true
+    "title": "MOVISTAR CHAMPIONS",
+    "logo": "mliga.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://embed.ksdjugfssddeports.com/embed/movistarligadecampeones.php",
+        "active": true
+      }
+    ]
   },
   {
     "id": 22,
-    "title": "M LIGA CHAMPIONS",
-    "logo": "mliga.png",
-    "base_link": "https://www.tvporinternet2.com/movistar-la-liga-en-vivo-por-internet.php",
-    "second_link": "",
-    "active": false
+    "title": "SKY SPORTS",
+    "logo": "skysports.png",
+    "logo_url": "",
+    "active": true,
+    "direct": [],
+    "link": [
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=sky_sports_laliga",
+        "active": true
+      }
+    ]
   },
   {
     "id": 23,
     "title": "FOX DEPORTES",
     "logo": "foxdeportes.png",
-    "base_link": "https://noveopartidos.xyz/ver/58",
-    "second_link": "",
-    "active": true
-  },
-  {
-    "id": 24,
-    "title": "TUDN",
-    "logo": "tudn.png",
-    "base_link": "https://noveopartidos.xyz/ver/82",
-    "second_link": "",
-    "active": true
+    "logo_url": "",
+    "active": true,
+    "direct": [
+      {
+        "base": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8",
+        "active": true
+      }
+    ],
+    "link": [
+      {
+        "base": "https://la18hd.su/vivo/canales.php?stream=foxdeportes",
+        "active": true
+      }
+    ]
   }
 ]
