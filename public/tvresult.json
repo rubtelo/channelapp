@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-10-17T21:13:01",
+  "last_updated": "2026-10-30T18:26:23",
   "data": [
     {
       "title": "DSPORTS",
       "logo": "dsports.png",
       "sources": [
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/3/index.m3u8?token=20e3169d8b86b2f214e874a4dd4f29934e7a0bca-2cbf95398aa2f41d70aa3cb0427744e4-1792310762-1792289162&_p2p=1792289465784"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/3/index.m3u8?token=87b27d3ad6c9db6ccebc5000be9e84a710d463f4-5f7e4e3d093f8656eb8dd950e5e39934-1793424007-1793402407"
         },
         {
-          "link": "https://y2fzdgxl.fubo18.com/dsports/mono.m3u8?token=6d3cabd005890e606136d08a54987d5731cee66b-ce-1792306566-1792288566"
+          "link": "https://bmf0aw9u.fubo18.com/dsports/mono.m3u8?token=1d22ec595883f29b0207a65a1b2a2c10509f020a-fd-1793419810-1793401810"
         }
       ]
     },
@@ -18,10 +18,10 @@
       "logo": "dsports2.png",
       "sources": [
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/7/index.m3u8?token=82700345992d246484097d2b78eba87088720a62-0861f465a6dfda468029c3657e9bd9bf-1792310771-1792289171&_p2p=1792289474088"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/7/index.m3u8?token=efad47de3802b47fe1d983e542d8d265a2b9454b-b723af796b1bdc20193c20f406b7c945-1793424012-1793402412"
         },
         {
-          "link": "https://bgvnzw5k.fubo18.com/dsports2/mono.m3u8?token=8b4cbd754b5b0ec7ce6d39a9bd4067c35b50be67-ad-1792306573-1792288573"
+          "link": "https://bgvnzw5k.fubo18.com/dsports2/mono.m3u8?token=a623dea784dfb3b2108baefbc20d3d9c613b788f-f8-1793419813-1793401813"
         }
       ]
     },
@@ -30,10 +30,10 @@
       "logo": "dsportsplus.png",
       "sources": [
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/11/index.m3u8?token=6fb0f107bd95f58eb424d5c6f5857e31d1459423-50f7717a57ea27dc1871293ccf6f0ab1-1792310776-1792289176&_p2p=1792289477709"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/11/index.m3u8?token=2496c102b5d2cc1dadba47bbb64fb1aacd715503-c9fde45b5565375ca6cf13376a0a7a0e-1793424015-1793402415"
         },
         {
-          "link": "https://b2zmawnpyww.fubo18.com/dsportsplus/mono.m3u8?token=d9fed818708720fa5b0555e52a95a63aed4a34fa-df-1792306577-1792288577"
+          "link": "https://dglvz29s.fubo18.com/dsportsplus/mono.m3u8?token=a25db003b5fc4d5c3dff5e834267aae93f3534df-68-1793419816-1793401816"
         }
       ]
     },
@@ -45,10 +45,10 @@
           "link": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/13/index.m3u8?token=0a1f7d43a310b7a1674efaeeaf2504d01d73bbec-9ac713bf79f8ed8e77535bcf0a39c06e-1792310780-1792289180&_p2p=1792289482252"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/13/index.m3u8?token=527ed34a34ce476686bec1a5e4b8152aca4af4d3-d84e5daec3c30d8c415f6ca159513664-1793424018-1793402418"
         },
         {
-          "link": "https://dglvz29s.fubo18.com/espn/mono.m3u8?token=8f38c68cfafe29082ae060bbdb12eb40f9ea92b8-18-1792306581-1792288581"
+          "link": "https://a2lja3m.fubo18.com/espn/mono.m3u8?token=7bafdba39c8062c1c2401dec2b54de507a3ab656-4e-1793419819-1793401819"
         }
       ]
     },
@@ -60,10 +60,10 @@
           "link": "https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/14/index.m3u8?token=b1233c1b00fe00d3927105dec1b25a68318f9880-ced803ec0c604ec3d07cf77e70bb956c-1792310784-1792289184&_p2p=1792289486501"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/14/index.m3u8?token=a89da3757fd797b4c51e15d475512a14d1d8b6a5-bc699fb936984bab773e91a8bb86eb5a-1793424020-1793402420"
         },
         {
-          "link": "https://am91cm5leq.fubo18.com/espn2/mono.m3u8?token=eb91086289d4ab57154c4eb5c7649f65e30c0bdd-c2-1792306586-1792288586"
+          "link": "https://dw5pdgvk.fubo18.com/espn2/mono.m3u8?token=e77c2736718664b03a2244c311102e35d8aace38-39-1793419821-1793401821"
         }
       ]
     },
@@ -75,10 +75,10 @@
           "link": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/15/index.m3u8?token=e4a0839e1a6331083bd15fd5c32357a58480cc98-b9f1b4cd778940f354f17ee1311fc134-1792310789-1792289189&_p2p=1792289492176"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/15/index.m3u8?token=e9211cfa12e21cb6bb33538f8ccc47e3449c0c08-caf0541112d69a7aaacf35b026c2c9af-1793424023-1793402423"
         },
         {
-          "link": "https://am91cm5leq.fubo18.com/espn3/mono.m3u8?token=a0d2562f28862bfb88a24d88466a51cd6f0f43b4-13-1792306591-1792288591"
+          "link": "https://b2zmawnpyww.fubo18.com/espn3/mono.m3u8?token=749c49e2d0e0ea55998d927b7a527a5c3eb84405-19-1793419823-1793401823"
         }
       ]
     },
@@ -90,10 +90,7 @@
           "link": "https://barinaslive1.boldmss.com/ESPN_4/ESPN_4.isml/ESPN_4.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/23/index.m3u8?token=89e4e7eceee0073aa646380dbf0409570e129bdb-8fb70df4362895c72c8e3ec666f4a275-1792310794-1792289194&_p2p=1792289500056"
-        },
-        {
-          "link": "https://yxdlc29tzq.fubo18.com/espn4/mono.m3u8?token=e2f2b221861bbec4444dd14b796a7ee19f446f44-45-1792306599-1792288599"
+          "link": "https://c2f2zq.fubo18.com/espn4/mono.m3u8?token=e13d1bb2d4599686e0386f9f6d3c2615dcc13ff1-ab-1793419830-1793401830"
         }
       ]
     },
@@ -105,10 +102,10 @@
           "link": "https://barinaslive1.boldmss.com/ESPN_5/ESPN_5.isml/ESPN_5.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/24/index.m3u8?token=665ce7b022c017c05031ef39997610431c485ae2-f1ae9b5a7a2c062491aa37dd9c20916f-1792310803-1792289203&_p2p=1792289510138"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/24/index.m3u8?token=5d9d2e85eba318021619bf9a943c0521a8168d0a-1f706e059828759b3d8a4dd426861ffb-1793424032-1793402432"
         },
         {
-          "link": "https://bgvnzw5k.fubo18.com/espn5/mono.m3u8?token=229830dc381c24afaa65f5d5aece46e7c92a6a95-99-1792306609-1792288609"
+          "link": "https://dglvz29s.fubo18.com/espn5/mono.m3u8?token=5962db21e5beb1a69940df0efd63f6f52988cd0a-5b-1793419833-1793401833"
         }
       ]
     },
@@ -120,10 +117,10 @@
           "link": "https://barinaslive1.boldmss.com/ESPN_6/ESPN_6.isml/ESPN_6.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/25/index.m3u8?token=1b2ea6ed51d99a31f800d5d6107926b1d52e137a-37dca2aea12cdc9b0d88bd52873777d4-1792310813-1792289213&_p2p=1792289515318"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/25/index.m3u8?token=eed3dd0ba3d154174560ad19ca45e5fd1e2d18ef-4e19c2ccd12a9e0ef890b11fafdc317b-1793424034-1793402434"
         },
         {
-          "link": "https://ewvz.fubo18.com/espn6/mono.m3u8?token=0a1418cc03eb8e02b693480e41449372f3402952-b5-1792306614-1792288614"
+          "link": "https://y2fzdgxl.fubo18.com/espn6/mono.m3u8?token=43923f1c0216cca6932c8ce51f6bc219d6b35812-45-1793419835-1793401835"
         }
       ]
     },
@@ -135,10 +132,10 @@
           "link": "https://barinaslive1.boldmss.com/ESPN_7/ESPN_7.isml/ESPN_7.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/26/index.m3u8?token=1b724a44cbde909a84aacd0b963478654ed9bf6e-9f55eb0c041cbf13b6f11f9b45916bc7-1792310818-1792289218&_p2p=1792289520254"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/26/index.m3u8?token=1daf5053fc34e891803d3355b4b29f7e9a5459e5-ff6fc1f408db2f2bcecd010a99a99745-1793424036-1793402436"
         },
         {
-          "link": "https://bmf0aw9u.fubo18.com/espn7/mono.m3u8?token=e03c84ab764b811f4fbecc20697cbea2c6e6e75b-4e-1792306619-1792288619"
+          "link": "https://ym9yzq.fubo18.com/espn7/mono.m3u8?token=3ce151ac485e15aaa59af1d3876bfc0278055f21-bc-1793419837-1793401837"
         }
       ]
     },
@@ -147,13 +144,10 @@
       "logo": "espnpremium.png",
       "sources": [
         {
-          "link": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/espn_premium.stream/playlist.m3u8"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/5/index.m3u8?token=be2626b0d95f3800ea03ce2d76eac0c70e431497-16050199778ce0e7b9200431a6bd556f-1793424040-1793402440"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/5/index.m3u8?token=3aa362d2c776b3716546f415e1a883112b33c601-e41e5287ffefa751700a3ce99a15394d-1792310824-1792289224&_p2p=1792289527687"
-        },
-        {
-          "link": "https://c2f2zq.fubo18.com/espnpremium/mono.m3u8?token=615cbfb1f3d9782c29fc886fcbc4d8684a52b28d-b4-1792306627-1792288627"
+          "link": "https://ewvz.fubo18.com/espnpremium/mono.m3u8?token=f1334cc91088d3ba4f7053b2400162aa3be1307b-f9-1793419841-1793401841"
         }
       ]
     },
@@ -165,10 +159,13 @@
           "link": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/6/index.m3u8?token=7f58c8013a7924361b78680722a78911c2a2edf2-58951cdfe08fcf2207af1eed0c317ded-1792310831-1792289231&_p2p=1792289532345"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/6/index.m3u8?token=d600690dd6d9886049267822dd418711ac9815bd-1fd835a310842fc5ada1e76df55639fb-1793424043-1793402443"
         },
         {
-          "link": "https://yxdlc29tzq.fubo18.com/tycsports/mono.m3u8?token=b7d048fffcc70536d49c715fda797e4c70ac40cf-ef-1792306631-1792288631"
+          "link": "https://dw5pdgvk.fubo18.com/tycsports/mono.m3u8?token=ff7fa1252e2ba0a50bedf5c3eb80ed90c9573a86-a0-1793419844-1793401844"
+        },
+        {
+          "link": "https://cdn.wideiptv.top/TYCSPT/index.m3u8?token=VFlDU1BUfG5vX2NoZWNrX2lwfDE3OTM0MDMwNDc=.30034373007be6d93abae70a4b58c1172961dd5f8fd9fbe6a625bead0a62f76e"
         }
       ]
     },
@@ -177,7 +174,7 @@
       "logo": "winsports.png",
       "sources": [
         {
-          "link": "https://dglvz29s.fubo18.com/winsports/mono.m3u8?token=8554291e1eb59628ad728ac6b7408070f85f5329-77-1792306653-1792288653"
+          "link": "https://dw5pdgvk.fubo18.com/winsports/mono.m3u8?token=e58e0205c28908bcc278e1d8d328216c1449b87c-86-1793419849-1793401849"
         }
       ]
     },
@@ -186,10 +183,7 @@
       "logo": "winsportsplus.png",
       "sources": [
         {
-          "link": "https://bmf0aw9u.fubo18.com/winsports2/mono.m3u8?token=1fbb002d6bcd0ada5926467f9e9d190630ddfad5-44-1792306655-1792288655"
-        },
-        {
-          "link": "https://yxdlc29tzq.fubo18.com/winsportsplus/mono.m3u8?token=b8bf998ece2a0422209e31d5df91359bed169325-50-1792306656-1792288656"
+          "link": "https://dw5pdgvk.fubo18.com/winsports2/mono.m3u8?token=89532dfc1a67cff46fa7bd1f789de3baa843c6bb-4b-1793419849-1793401849"
         }
       ]
     },
@@ -198,7 +192,7 @@
       "logo": "beinsports.png",
       "sources": [
         {
-          "link": "https://ym9yzq.fubo18.com/beinsportes/mono.m3u8?token=a82c0061028bc12594943bfedab4c0de48ef29d7-c5-1792306657-1792288657"
+          "link": "https://ewvz.fubo18.com/beinsportes/mono.m3u8?token=154cc4f1cde65f7f04175fd24d5830c19c3891e5-11-1793419855-1793401855"
         }
       ]
     },
@@ -210,10 +204,13 @@
           "link": "https://aegis-cloudfront-1.tubi.video/01f6c149-449b-4248-8bda-2278799205ec/playlist.m3u8"
         },
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/31/index.m3u8?token=3244f54f0890f78c6d4eddbd7a7ea442febd396a-50d8ea062b21ae7988d99ffb51707c1a-1792310860-1792289260&_p2p=1792289561946"
+          "link": "https://dc1644a9jazgj.cloudfront.net/beIN_Sports_Xtra_Espanol.m3u8"
         },
         {
-          "link": "https://am91cm5leq.fubo18.com/beinsport_xtra_espanol/mono.m3u8?token=6883a878b1776be89749d7e24335ef2e904b9bff-4f-1792306661-1792288661"
+          "link": "https://bein-esp-xumo.amagi.tv/playlist.m3u8"
+        },
+        {
+          "link": "https://aegis-cloudfront-1.tubi.video/651ee7d3-e75b-4748-be86-422d43ff24b6/playlist.m3u8"
         }
       ]
     },
@@ -222,7 +219,10 @@
       "logo": "https://i.imgur.com/olQJgm7.png",
       "sources": [
         {
-          "link": "http://88.212.15.17/live/esp1_hun/index.m3u8"
+          "link": "http://45.134.141.161:2200/ARG/Eurosport_1_HD/index.m3u8"
+        },
+        {
+          "link": "http://88.212.7.14/live/esp1_hun/index.m3u8"
         }
       ]
     },
@@ -231,7 +231,10 @@
       "logo": "https://i.imgur.com/f56dHgR.png",
       "sources": [
         {
-          "link": "http://88.212.15.17/live/esp2_hun/index.m3u8"
+          "link": "http://45.134.141.161:2200/ARG/Eurosport_2_HD/index.m3u8"
+        },
+        {
+          "link": "http://88.212.7.14/live/esp2_hun/index.m3u8"
         }
       ]
     },
@@ -240,10 +243,13 @@
       "logo": "tudn.png",
       "sources": [
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/1/index.m3u8?token=772f6e06ed20461218d919c360253a95de2d9fa6-1d040cbbe7d1377408630eed9a2f3173-1792310865-1792289265&_p2p=1792289566365"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/1/index.m3u8?token=68a04db0f146e367de7d5bc0be39451f89b8793e-38329a67c6a7d40c611f5089a4d1ba53-1793424059-1793402459"
         },
         {
-          "link": "https://y2fzdgxl.fubo18.com/tudn/mono.m3u8?token=a4e904f2bb26d97b9727fdf2a50f2cb6b0d1d611-ab-1792306665-1792288665"
+          "link": "https://am91cm5leq.fubo18.com/tudn_mx/mono.m3u8?token=fad567223a010330153ff2c23214e53399942940-97-1793419860-1793401860"
+        },
+        {
+          "link": "https://bmf0aw9u.fubo18.com/tudn/mono.m3u8?token=85e21a3f128960a10c58261eda56e5d007ffd6c8-73-1793419861-1793401861"
         }
       ]
     },
@@ -252,7 +258,7 @@
       "logo": "mliga.png",
       "sources": [
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/32/index.m3u8?token=be52a36865df26e52919178c9edc3b671452f3f8-0b46215c240b393ce45c42eebe2044d3-1792310868-1792289268&_p2p=1792289571321"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/32/index.m3u8?token=abdf01c36509363a7c66a7e05b302f231bc75ee9-ec762c68c844c1aa58ca67c78ab50104-1793424062-1793402462"
         }
       ]
     },
@@ -261,7 +267,16 @@
       "logo": "mliga.png",
       "sources": [
         {
-          "link": "https://deportes.ksdjugfssddeports.com/playlist/29/index.m3u8?token=4df7d01d28a96daaf5e67220d45a73d428684b50-2c4bd6c3f7484095abae76f9b0e71faf-1792310872-1792289272&_p2p=1792289573725"
+          "link": "https://deportes.ksdjugfssddeports.com/playlist/29/index.m3u8?token=cf8fd23d0407e4bddd1076bebca765650e25dc45-6477c414c0bed6633d02ddf0811411c0-1793424064-1793402464"
+        }
+      ]
+    },
+    {
+      "title": "SKY SPORTS",
+      "logo": "skysports.png",
+      "sources": [
+        {
+          "link": "http://45.228.234.9:8000/play/a06b/index.m3u8"
         }
       ]
     },
@@ -270,10 +285,70 @@
       "logo": "foxdeportes.png",
       "sources": [
         {
-          "link": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8"
+          "link": "https://bgvnzw5k.fubo18.com/foxdeportes/mono.m3u8?token=f12910c251d8a7366e6622c8eb25b06b53846126-5f-1793419876-1793401876"
+        }
+      ]
+    },
+    {
+      "title": "DAZN 3",
+      "logo": "https://i.imgur.com/2rXsq2m.png",
+      "sources": [
+        {
+          "link": "http://23.237.104.106:8080/DAZN_3/index.m3u8"
+        }
+      ]
+    },
+    {
+      "title": "DAZN 4",
+      "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/DAZN_4_2024.svg/960px-DAZN_4_2024.svg.png",
+      "sources": [
+        {
+          "link": "http://23.237.104.106:8080/DAZN_4/index.m3u8"
+        }
+      ]
+    },
+    {
+      "title": "DAZN 5",
+      "logo": "https://i.imgur.com/HD2XaeS.png",
+      "sources": [
+        {
+          "link": "http://23.237.104.106:8080/DAZN_5/index.m3u8"
+        }
+      ]
+    },
+    {
+      "title": "FIFA+",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png",
+      "sources": [
+        {
+          "link": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8"
         },
         {
-          "link": "https://ym9yzq.fubo18.com/foxdeportes/mono.m3u8?token=526901a0c75c13bed0a1b8a3952a6b8e9b75f951-f3-1792306679-1792288679"
+          "link": "https://jmp2.uk/plu-660c2a2d2433010008df7e92.m3u8"
+        },
+        {
+          "link": "https://6c849fb3.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctbXhfRklGQVBsdXNTcGFuaXNoLTFfSExT/c4a4ae65-18a8-4294-82c1-340d6d19b22a/3.m3u8"
+        }
+      ]
+    },
+    {
+      "title": "talkSPORT",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/9/9d/Talksport_logo.png",
+      "sources": [
+        {
+          "link": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8"
+        },
+        {
+          "link": "https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8"
+        }
+      ]
+    },
+    {
+      "title": "Sportitalia",
+      "logo": "https://i.imgur.com/hu56Ya5.png",
+      "sources": [
+        {
+          "link": "https://edge-001.streamup.eu/sportitalia/sisolocalcio_abr/playlist.m3u8"
         }
       ]
     }
